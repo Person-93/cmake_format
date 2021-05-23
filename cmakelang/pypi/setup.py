@@ -56,8 +56,8 @@ setup(
         ],
     },
     extras_require={
-        "YAML": ["pyyaml>=5.4"],
+        "YAML": [],
         "html-gen": ["jinja2==2.10.3"]
     },
-    install_requires=["six>=1.13.0"]
+    install_requires=["six>=1.13.0", "pyyaml>=5.4"]
 )

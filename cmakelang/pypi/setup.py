@@ -18,6 +18,7 @@ with io.open("cmakelang/doc/README.rst", encoding="utf-8") as infile:
 
 setup(
     name="cmakelang",
+    version=VERSION,
     packages=[
         "cmakelang",
         "cmakelang.format",
@@ -26,7 +27,6 @@ setup(
         "cmakelang.parse",
         "cmakelang.parse.funs",
     ],
-    version=VERSION,
     description="Language tools for cmake (format, lint, etc)",
     long_description=long_description,
     author="Josh Bialkowski",
@@ -60,98 +60,4 @@ setup(
         "html-gen": ["jinja2==2.10.3"]
     },
     install_requires=["six>=1.13.0"]
-)
-
-setup(
-    name="cmake-annotate",
-    packages=[],
-    version=VERSION,
-    description="Can format your listfiles so they don't look like crap",
-    long_description=long_description,
-    author="Josh Bialkowski",
-    author_email="josh.bialkowski@gmail.com",
-    url=GITHUB_URL,
-    download_url="{}/archive/{}.tar.gz".format(GITHUB_URL, VERSION),
-    keywords=["cmake", "annotate"],
-    license="GPLv3",
-    classifiers=[
-        "Development Status :: 3 - Alpha",
-        "Intended Audience :: Developers",
-        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
-    ],
-    include_package_data=True,
-    install_requires=[
-        "cmakelang>={}".format(VERSION),
-        "pyyaml>=5.4"]
-)
-
-setup(
-    name="cmake-format",
-    packages=[],
-    version=VERSION,
-    description="Can format your listfiles so they don't look like crap",
-    long_description=long_description,
-    author="Josh Bialkowski",
-    author_email="josh.bialkowski@gmail.com",
-    url=GITHUB_URL,
-    download_url="{}/archive/{}.tar.gz".format(GITHUB_URL, VERSION),
-    keywords=["cmake", "format", "formatter"],
-    license="GPLv3",
-    classifiers=[
-        "Development Status :: 3 - Alpha",
-        "Intended Audience :: Developers",
-        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
-    ],
-    include_package_data=True,
-    extras_require={
-        "YAML": ["pyyaml>=5.4"],
-    },
-    install_requires=["cmakelang>={}".format(VERSION)]
-)
-
-
-setup(
-    name="cmake-lint",
-    packages=[],
-    version=VERSION,
-    description="Can check your listfiles for common problems",
-    long_description=long_description,
-    author="Josh Bialkowski",
-    author_email="josh.bialkowski@gmail.com",
-    url=GITHUB_URL,
-    download_url="{}/archive/{}.tar.gz".format(GITHUB_URL, VERSION),
-    keywords=["cmake", "lint", "linter"],
-    license="GPLv3",
-    classifiers=[
-        "Development Status :: 3 - Alpha",
-        "Intended Audience :: Developers",
-        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
-    ],
-    include_package_data=True,
-    extras_require={
-        "YAML": ["pyyaml>=5.4"],
-    },
-    install_requires=["cmakelang>={}".format(VERSION)]
-)
-
-
-setup(
-    name="cmake-parse",
-    packages=[],
-    version=VERSION,
-    description="Python library for parsing cmake listfiles. ",
-    long_description=long_description,
-    author="Josh Bialkowski",
-    author_email="josh.bialkowski@gmail.com",
-    url=GITHUB_URL,
-    download_url="{}/archive/{}.tar.gz".format(GITHUB_URL, VERSION),
-    keywords=["cmake", "lint", "linter"],
-    license="GPLv3",
-    classifiers=[
-        "Development Status :: 3 - Alpha",
-        "Intended Audience :: Developers",
-        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
-    ],
-    include_package_data=True,
-    install_requires=["cmakelang>={}".format(VERSION)]
 )

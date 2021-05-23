@@ -2,11 +2,10 @@
 cmake lang
 ==========
 
-.. image:: https://travis-ci.com/cheshirekow/cmake_format.svg?branch=master
-    :target: https://travis-ci.com/cheshirekow/cmake_format
-
-.. image:: https://readthedocs.org/projects/cmake-format/badge/?version=latest
-    :target: https://cmake-format.readthedocs.io
+.. attention::
+  This fork of `cmakelang <https://github.com/cheshirekow/cmake_format>`_ was created
+  because of `this issue <https://github.com/cheshirekow/cmake_format/issues/256>`_.
+  I will probably stop maintaining it once that issue is closed.
 
 The ``cmakelang`` project provides Quality Assurance (QA) tools
 for ``cmake``:

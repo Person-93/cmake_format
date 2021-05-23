@@ -56,7 +56,7 @@ setup(
         ],
     },
     extras_require={
-        "YAML": ["pyyaml>=5.3"],
+        "YAML": ["pyyaml>=5.4"],
         "html-gen": ["jinja2==2.10.3"]
     },
     install_requires=["six>=1.13.0"]
@@ -82,7 +82,7 @@ setup(
     include_package_data=True,
     install_requires=[
         "cmakelang>={}".format(VERSION),
-        "pyyaml>=5.3"]
+        "pyyaml>=5.4"]
 )
 
 setup(
@@ -104,7 +104,7 @@ setup(
     ],
     include_package_data=True,
     extras_require={
-        "YAML": ["pyyaml>=5.3"],
+        "YAML": ["pyyaml>=5.4"],
     },
     install_requires=["cmakelang>={}".format(VERSION)]
 )
@@ -129,7 +129,7 @@ setup(
     ],
     include_package_data=True,
     extras_require={
-        "YAML": ["pyyaml>=5.3"],
+        "YAML": ["pyyaml>=5.4"],
     },
     install_requires=["cmakelang>={}".format(VERSION)]
 )
